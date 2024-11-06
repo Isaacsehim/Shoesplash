@@ -1,59 +1,113 @@
-body {
-
+* {
+	box-sizing: border-box;
 }
-
+/*TOPBAR*/
 div.topbar {
-	text-decoration: none;
 	display: flex;
 	justify-content: center;
-	box-sizing: border-box;
 	align-items: center;
 	font-size: 2rem;
 	max-width: 100%;
 	color: #F6D4F5;
 	background-color: #0C0C0C;
 	height: 4rem;
-	align-content: center;
 	font-family:'Courgette';
 }
-
+/*BANDEAU HEADER*/
 div.container {
-
-	box-sizing: border-box;
 	background-color: #F6D4F5;
 }
+/*LE LOGO DU SITE*/
+#index.html img {
 
-a.img {
-	float: left;
-	box-sizing: border-box;
-	max-width: 100%;
 }
-
-p.left {
-	box-sizing: border-box;
+/*LE PANIER*/
+#cart {
 	float: right;
+	padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: normal;
 }
 
+#cart span {
+	float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}
+/*NAVIGATEUR*/
 nav {
-	box-sizing: border-box;
 	display: flex;
-	text-decoration: none;
 	justify-content:space-around;
-    font-weight: normal;
-    font-family: 'Courgette';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: normal;
     font-size: 2rem;
+	padding: 3rem;
 }
 
+/*TEXTE NAVIGATEUR*/
 a {
-	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #0C0C0C;
 	transition: ease 0.2s;
 }
+/*DEUX PHRASES "LES PLUS BEAUX..."*/
+#slider h2 {
+	position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.6rem;
+	background-color: #F6D4F5;
+	padding: 1.5rem;
+	opacity: 85%;
+}
 
+#slider h2 span {
+	font-weight: normal;
+}
+/*ESCARPINS*/
+#select {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.escarpin{
+	display: flex;
+}
+
+#select > article {
+	display: flex;
+	flex-direction: column;
+}
+
+article.best {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#new h2 {
+	background-color: #EA32C4 ;
+}
+
+h1 {
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: medium;
+}
+
+h3 {
+	font-family: 'Courgette';
+	font-weight: medium;
+}
+
+/*RESPONSIV TÉLÉPHONE*/
 @media (max-width: 640px) {
 
 	div.container {
-		max-width: 1500px;
-		box-sizing: border-box;
+		width: 100%;
 		background-color: #F6D4F5;
 	}
 }
